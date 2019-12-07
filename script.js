@@ -3,6 +3,36 @@ var factNum=10;// the starting number to be multiplied by; the 'answer'
 var factSet=10;  // the facts you're practicing:   the twos for this.  this is arbitrary right now; I'll figure out how to make this happen in proper sequence later.  
 
 
+
+// to show number chart 1 to 100 with every N div in a different color. 
+
+function createMultImage()
+{
+  let multPicHTML="";
+   let numMax = factSet*10;
+  for (let num=1; num<=numMax; num++)
+  {
+    
+    multPicHTML +=' <div  class="item"> ' + num + ' </div>';
+    // multPicHTML +=' <div id="num2" class="item">2</div>';  that worked for just 2
+  }
+ 
+  multPic.innerHTML=multPicHTML;
+}
+
+changeBackgrounds('section > div','yellow');
+function changeBackgrounds(selectorStr, bgColor) {
+  let newColor=bgColor;
+  
+  document.getElementById("start").style.color=newColor;
+  // document.querySelectorAll(selectorStr).forEach(elem => {
+  //   elem.style.backgroundColor = bgColor;
+  // });
+}
+
+
+
+
 // Following code: so hitting enter is like clicking "check answer."
 var input = document.getElementById("factor");
 input.addEventListener("keyup", function(event)
@@ -47,7 +77,7 @@ function nextFact()
     factSet++;  
   p1.innerHTML="next fact is" + factSet;
   startUp();
-  // we *will* if this works ... have it go to the next num in the array that is our sequence 
+  // we *will* if this works ... have it go to the next num in the array that is our sequence ***FUTURE THING HERE ***
   }
 
 function startUp()
@@ -80,19 +110,7 @@ else
 }
 
 }
-function createMultImage()
-{
-  let multPicHTML="";
-   let numMax = factSet*10;
-  for (let num=1; num<=numMax; num++)
-  {
-    
-    multPicHTML +=' <div id="num2" class="item"> ' + num + ' </div>';
-    // multPicHTML +=' <div id="num2" class="item">2</div>';  that worked for just 2
-  }
- 
-  multPic.innerHTML=multPicHTML;
-}
+
 
 
 
