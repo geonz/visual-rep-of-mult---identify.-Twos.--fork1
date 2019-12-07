@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Seeing Times Tables </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- Things to remember:   equals sign before the class.... don't comment wrong -- it will look like a comment but kill things...
+    OKAY!   LET'S fork *this* so we can ... spend half an hour setting up grid for Build Name Record Name Connect.... 
+
+     -->
+    <div id="buttonsDiv" class="gridBig">  
+      <!-- check this ID it might not be necessary; it's the whole blooming div.  -->
+      <div id="restart">
+         <button id="start"  class="button1" onclick="startUp();">Start</button> 
+       <button id="reset"  class="button1" disabled="true" onclick="startUp();">Start over</button> </div>
+
+      <div id="multPic" class="centerMult"  >
+        <!-- <div class="imgInGrid"><img src= images/2socksIcon.png  tableValue="1" alt="1 pair of 2 socks" style="max-width:100%;max-height:100%;"></div>
+        Now this is done with javaScript adding to the HTML.   
+            
+         -->
+        </div>
+      <div class="testText">
+        <p id="p1">test<p>
+      </div>
+       
+      <div class="inputPlace2" id="Q1">
+        <div class="directions">Finish the expression: What's in the picture?   </div>
+<div id="factor2"> 
+       2  x <input type="number" id="factor"  maxlength="2"   /> </div>
+      
+      </div>
+       <div   class="checkAnswer"> 
+         <button id="check1" class="button1" onclick="checkName();">check Answer</button>
+         </div>
+      
+      <div class="inputPlace2"  >
+        
+        <div class="firstFactor" id="A1">
+           2 x   = <input type="number" id="multAnswer" size="1" maxlength="2" /></div>
+      </div>
+       <div class="checkAnswer">
+         <button id="check2"  class="button1" onclick="checkAnswer();">check Answer</button>
+
+
+       </div>
+      
+        <div class="feedbackDiv" id="feedback">dude</div>
+        
+    </div>
+      </div>
+
+ -->
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>
