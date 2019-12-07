@@ -89,13 +89,20 @@ else
 function createMultImage()
 {
   let multPicHTML="";
-  for (let num=1; num<=factNum; num++)
-
+   let numMax = factNum*factSet;
+  for (let num=1; num<=numMax; num++)
   {
-    for (let num=1; num<=factSet; num++)
     
-   { multPicHTML +='<img src= images/2socksIcon.png  tableValue="1" alt="1 pair of 2 socks" style="max-width:100%;max-height:100%;">'}
-    }
+    multPicHTML +=' <div id="num2" class="item"> ' + num + ' </div>';
+    // multPicHTML +=' <div id="num2" class="item">2</div>';  that worked for just 2
+  }
+  // for (let num=1; num<=factNum; num++)
+
+  // {
+  //   for (let num=1; num<=factSet; num++)
+    
+  //  { multPicHTML +='<img src= images/2socksIcon.png  tableValue="1" alt="1 pair of 2 socks" style="max-width:100%;max-height:100%;">'}
+  //   }
   multPic.innerHTML=multPicHTML;
 }
 function checkAnswer()
