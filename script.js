@@ -1,14 +1,9 @@
-// function MathFact(operand1,operand2)
-// {
-//   this.nameFactor= operand2;
-//   this.nameSet=operand1; 
-// }
-// I am not sure how to do this.   It will come to me ;)   
-// don't have separate images.   Display that many groups :P   
  
 var factNum=10;// the starting number to be multiplied by; the 'answer'
 var factSet=10;  // the facts you're practicing:   the twos for this.  this is arbitrary right now; I'll figure out how to make this happen in proper sequence later.  
-// next block is so hitting enter is like clicking "check answer."
+
+
+// Following code: so hitting enter is like clicking "check answer."
 var input = document.getElementById("factor");
 input.addEventListener("keyup", function(event)
  {
@@ -82,9 +77,8 @@ else
   check2.style.display="none";
    A1.innerHTML=  factSet + " x " + factNum + " =" + ' <input type="number" id="multAnswer"  size="1" maxlength="2"/>';
  check1.disabled=false;
- createMultImage();
 }
-// Kazinga!!! well, garbanzo beans, if I do something in another window, it puts it on this one. 
+
 }
 function createMultImage()
 {
@@ -99,6 +93,11 @@ function createMultImage()
  
   multPic.innerHTML=multPicHTML;
 }
+
+
+
+
+
 function checkAnswer()
 {
     var c = multAnswer.value; 
@@ -112,10 +111,10 @@ newFact();
   }
   else{
     feedback.innerHTML="That doesn't seem to be right.";
+    // do better than this -- make it actually diagnostic. 
   }
-  // oops we don't have a "what to do if it's wrong" option. 
-// check it and also put in the other space "2 x N = "
-}
-//createMultImage();
+ 
+} 
 
+ createMultImage();
 newFact(); 
