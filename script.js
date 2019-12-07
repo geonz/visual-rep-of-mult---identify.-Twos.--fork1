@@ -6,6 +6,8 @@ var factSet=10;  // the facts you're practicing:   the twos for this.  this is a
 
 // to show number chart 1 to 100 with every N div in a different color. 
 
+
+
 function createMultImage()
 {
   let multPicHTML="";
@@ -23,6 +25,7 @@ function createMultImage()
     
 }
  
+ // this doesn't work 
 changeBackgrounds('.item','yellow');
 function changeBackgrounds(selectorStr, bgColor) {
   let newColor=bgColor;
@@ -140,3 +143,11 @@ newFact();
 
  createMultImage();
 newFact(); 
+ function shadeMult()
+  {
+    section > div: nth-child(5n)
+    {
+      
+    }
+  }
+ 
