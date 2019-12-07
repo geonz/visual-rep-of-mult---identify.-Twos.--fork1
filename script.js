@@ -22,7 +22,7 @@ function createMultImage()
   multPic.innerHTML=multPicHTML;
     
 }
- 
+ // this doesn't work
 changeBackgrounds('.item','yellow');
 function changeBackgrounds(selectorStr, bgColor) {
   let newColor=bgColor;
@@ -33,9 +33,7 @@ function changeBackgrounds(selectorStr, bgColor) {
   //document.getElementById("start").style.color=newColor;
     
 }
-
-
-
+ 
 
 // Following code: so hitting enter is like clicking "check answer."
 var input = document.getElementById("factor");
