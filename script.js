@@ -6,8 +6,8 @@
 // I am not sure how to do this.   It will come to me ;)   
 // don't have separate images.   Display that many groups :P   
  
-var factNum=5;// the starting number to be multiplied by; the 'answer'
-var factSet=2;  // the facts you're practicing:   the twos for this.  this is arbitrary right now; I'll figure out how to make this happen in proper sequence later.  
+var factNum=10;// the starting number to be multiplied by; the 'answer'
+var factSet=10;  // the facts you're practicing:   the twos for this.  this is arbitrary right now; I'll figure out how to make this happen in proper sequence later.  
 // next block is so hitting enter is like clicking "check answer."
 var input = document.getElementById("factor");
 input.addEventListener("keyup", function(event)
