@@ -90,7 +90,11 @@ function createMultImage()
 {
   let multPicHTML="";
   for (let num=1; num<=factNum; num++)
-  {multPicHTML +='<img src= images/2socksIcon.png  tableValue="1" alt="1 pair of 2 socks" style="max-width:100%;max-height:100%;">'
+
+  {
+    for (let num=1; num<=factSet; num++)
+    
+   { multPicHTML +='<img src= images/2socksIcon.png  tableValue="1" alt="1 pair of 2 socks" style="max-width:100%;max-height:100%;">'}
     }
   multPic.innerHTML=multPicHTML;
 }
