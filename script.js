@@ -13,21 +13,23 @@ function createMultImage()
   for (let num=1; num<=numMax; num++)
   {
     
-    multPicHTML +=' <div  class="item"> ' + num + ' </div>';
+    multPicHTML +=' <div  class="item" id=d"' + num + '> ' + num + ' </div>';
+    
+    // okay setting the class works yaya!
     // multPicHTML +=' <div id="num2" class="item">2</div>';  that worked for just 2
   }
  
   multPic.innerHTML=multPicHTML;
 }
 
-changeBackgrounds('section > div','yellow');
+changeBackgrounds('.item','yellow');
 function changeBackgrounds(selectorStr, bgColor) {
   let newColor=bgColor;
-  
-  document.getElementById("start").style.color=newColor;
-  // document.querySelectorAll(selectorStr).forEach(elem => {
-  //   elem.style.backgroundColor = bgColor;
-  // });
+ 
+ // document.querySelectorAll('.item').style.color=newColor;;
+  //box.style.color=bgcolor;
+  //document.getElementById("start").style.color=newColor;
+    
 }
 
 

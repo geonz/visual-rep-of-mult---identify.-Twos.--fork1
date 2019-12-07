@@ -7,7 +7,10 @@
   margin:auto;
   padding: 10px;
 }
- 
+ .item
+ {
+   color:aqua;
+ }
 .button1:disabled {opacity: .5}
 body {
   margin:  auto;
