@@ -44,14 +44,7 @@ body {
 }
 .centerMult 
 { 
-  /* this is where the images will be.  In othe rbranches it will be number chart*/ 
-  
-     /* display: inline-grid;
-     grid-template-columns: repeat(5,1fr);
-     grid-template-rows: auto auto; */
-
-     /* here comes the number chart version.  */
-display: grid;
+ display: grid;
      grid-template-columns: repeat(10, minmax(10px, 1fr));
      grid-template-rows: repeat(10, minmax(10px, 1fr));
 }

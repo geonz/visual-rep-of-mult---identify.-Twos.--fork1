@@ -2,30 +2,32 @@
 var factNum=10;// the starting number to be multiplied by; the 'answer'
 var factSet=10;  // the facts you're practicing:   the twos for this.  this is arbitrary right now; I'll figure out how to make this happen in proper sequence later.  
 
-
+ 
 
 // to show number chart 1 to 100 with every N div in a different color. 
 
 function createMultImage()
 {
   let multPicHTML="";
-   let numMax = factSet*10;
+   let numMax = factSet*14;
   for (let num=1; num<=numMax; num++)
-  {
-    
-    multPicHTML +=' <div  class="item" id=d"' + num + '> ' + num + ' </div>';
-    
+  { 
+    multPicHTML +=' <div id=num class="item"> ' + num + ' </div>';
+    //document.getElementById("d1").id=num;
+    //multPicHTML +=' <div  class="item"> ' + num + ' </div>';
     // okay setting the class works yaya!
     // multPicHTML +=' <div id="num2" class="item">2</div>';  that worked for just 2
   }
  
   multPic.innerHTML=multPicHTML;
+    
 }
-
+ 
 changeBackgrounds('.item','yellow');
 function changeBackgrounds(selectorStr, bgColor) {
   let newColor=bgColor;
- 
+  let thing=selectorStr;
+ document.querySelectorAll('.item').forEach(elem=>{elem.style.backgroundColor=newColor;});
  // document.querySelectorAll('.item').style.color=newColor;;
   //box.style.color=bgcolor;
   //document.getElementById("start").style.color=newColor;
