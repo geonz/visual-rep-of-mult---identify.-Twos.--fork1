@@ -4,7 +4,7 @@ var factSet=10;  // the facts you're practicing:   the twos for this.  this is a
 
  
 
-// to show number chart 1 to 100 with every N div in a different color.  RIght now it's set so it only shows enough for your facts (e.g. for the 2's it would only go to 20).   I wnat both options. 
+// to show number chart 1 to 100 with every N div in a different color.  RIght now it's set so it only shows enough for your facts (e.g. for the 2's it would only go to 20).   
 
 function createMultImage()
 {
@@ -12,7 +12,8 @@ function createMultImage()
    let numMax = factSet*10;
   for (let num=1; num<=numMax; num++)
   { 
-     multPicHTML +=' <div class="item"> ' + num + ' </div>';
+      multPicHTML +=' <div class="item"> ' + num + ' </div>';
+      
      // okay, this doesn't break things but I don't know how to tell whether the id is being given to the div. 
     //  multPicHTML +='  <div class = "item" id="d'+num + '" >' + num + ' </div>'; 
      
@@ -26,14 +27,14 @@ function createMultImage()
     } 
 }
  // this doesn't work
-changeBackgrounds('.item','yellow');
+changeBackgrounds('start','yellow');
 function changeBackgrounds(selectorStr, bgColor) {
   let newColor=bgColor;
   let thing=selectorStr;
- document.querySelectorAll('.item').forEach(elem=>{elem.style.backgroundColor=newColor;});
+ document.querySelectorAll(thing).forEach(elem=>{elem.style.backgroundColor=newColor;});
  // document.querySelectorAll('.item').style.color=newColor;;
   //box.style.color=bgcolor;
-  //document.getElementById("start").style.color=newColor;
+  document.getElementById(thing).style.color=newColor;
     
 }
  
