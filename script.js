@@ -4,23 +4,26 @@ var factSet=10;  // the facts you're practicing:   the twos for this.  this is a
 
  
 
-// to show number chart 1 to 100 with every N div in a different color. 
+// to show number chart 1 to 100 with every N div in a different color.  RIght now it's set so it only shows enough for your facts (e.g. for the 2's it would only go to 20).   I wnat both options. 
 
 function createMultImage()
 {
   let multPicHTML="";
-   let numMax = factSet*14;
+   let numMax = factSet*10;
   for (let num=1; num<=numMax; num++)
   { 
-    multPicHTML +=' <div id=num class="item"> ' + num + ' </div>';
-    //document.getElementById("d1").id=num;
-    //multPicHTML +=' <div  class="item"> ' + num + ' </div>';
-    // okay setting the class works yaya!
-    // multPicHTML +=' <div id="num2" class="item">2</div>';  that worked for just 2
+     multPicHTML +=' <div class="item"> ' + num + ' </div>';
+     // okay, this doesn't break things but I don't know how to tell whether the id is being given to the div. 
+    //  multPicHTML +='  <div class = "item" id="d'+num + '" >' + num + ' </div>'; 
+     
   }
  
   multPic.innerHTML=multPicHTML;
-    
+    // section > div: nth-child(4n)
+    // saying section makes everythin gbreak here. I rhink b/x THAT IS supposed ot be in css.
+    {
+
+    } 
 }
  // this doesn't work
 changeBackgrounds('.item','yellow');

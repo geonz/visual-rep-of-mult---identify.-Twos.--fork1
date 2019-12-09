@@ -7,21 +7,19 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <!-- Things to remember:   equals sign before the class.... don't comment wrong -- it will look like a comment but kill things...
-    OKAY!   LET'S fork *this* so we can ... spend half an hour setting up grid for Build Name Record Name Connect.... 
-
-     -->
+   
     <div id="buttonsDiv" class="gridBig">  
       <!-- check this ID it might not be necessary; it's the whole blooming div.  -->
       <div id="restart">
          <button id="start"  class="button1" onclick="startUp();">Start</button> 
-       <button id="reset"  class="button1" disabled="true" onclick="startUp();">Start over</button> </div>
+       <button id="reset"  class="button1" disabled="true" onclick="startUp();">Start over</button>
+       <!-- need to figure this out as well as message for when they get through ten -->
+        </div>
 
       <section id="multPic" class="centerMult"  >
        
-
-
-       
+       <!-- javascript will populate with 100 divs numbered 1-20.   I haven't figured out how to give them id's but that mightnot be necessary. -->
+    
         </section>
       <div class="testText">
         <p id="p1">test<p>
@@ -30,7 +28,9 @@
       <div class="inputPlace2" id="Q1">
         <div class="directions">Finish the expression: What's in the picture?   </div>
 <div id="factor2"> 
-       2  x <input type="number" id="factor"  maxlength="2"   /> </div>
+       2  x <input type="number" id="factor" placeholder="??" maxlength="2" autofocus  > 
+       <!-- OK placeholder and autofocus don't seem to be happening but other things don't show up here, either... -->
+       </div>
       
       </div>
        <div   class="checkAnswer"> 
